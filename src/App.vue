@@ -87,7 +87,7 @@ const { resetAll } = useGamePersistence()
         <div class="col-right">
           <AlchemyCauldron />
           <CustomerQueue />
-          <PotionShowcase />
+          <PotionShowcase class="showcase-card" />
         </div>
       </div>
 
@@ -402,8 +402,13 @@ h1 {
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
+.showcase-card {
+  flex: 1;
+}
+
 .pashalka {
   width: 100%;
+  height: 100%;
   flex: 1;
   min-height: 0;
   display: flex;
@@ -412,6 +417,9 @@ h1 {
 }
 
 .pashalka-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: block;
